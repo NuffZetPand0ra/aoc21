@@ -16,14 +16,14 @@ function solve1($input) : int
 }
 function solve2($input) : int
 {
-    $measurents = [];
+    $measurements = [];
     foreach($input as $key=>$row){
         $value = $row;
         $value += $input[$key+1] ?? 0;
         $value += $input[$key+2] ?? 0;
-        $measurents[] = $value;
+        $measurements[] = $value;
     }
-    return solve1($measurents);
+    return solve1($measurements);
 }
 
 $input = str_getcsv(file_get_contents(__DIR__.'/input.txt'), "\n");
