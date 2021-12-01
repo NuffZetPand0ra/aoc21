@@ -4,15 +4,26 @@ namespace nuffy\aoc20\dXX;
 
 function solve1($input) : int
 {
-    $last_number = INF;
+    $last_number = 0;
+    $increments = -1;
     foreach($input as $row){
-
+        if($row > $last_number){
+            $increments++;
+        }
+        $last_number = $row;
     }
-    return 0;
+    return $increments;
 }
 function solve2($input) : int
 {
-    return 0;
+    $measurents = [];
+    foreach($input as $key=>$row){
+        $value = $row;
+        $value += $input[$key+1] ?? 0;
+        $value += $input[$key+2] ?? 0;
+        $measurents[] = $value;
+    }
+    return solve1($measurents);
 }
 
 $input = str_getcsv(file_get_contents(__DIR__.'/input.txt'), "\n");
