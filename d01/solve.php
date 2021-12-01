@@ -1,6 +1,6 @@
 <?php
-/* https://adventofcode.com/2020/day/X */
-namespace nuffy\aoc20\dXX;
+/* https://adventofcode.com/2021/day/1 */
+namespace nuffy\aoc21\d01;
 
 function solve1($input) : int
 {
