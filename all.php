@@ -1,5 +1,5 @@
 <?php
-namespace nuffy\aoc20;
+namespace nuffy\aoc21;
 
 $folders = scandir(__DIR__);
 foreach($folders as $folder){
