@@ -25,7 +25,7 @@ function getLeaderboard() : string
         $data = json_decode($res);
         $members = (array)$data->members;
     }catch(\Exception $e){
-        throw new \Exception ("Response from AOC was not json.");
+        throw new \Exception ("Response from AOC was not json.", 0, $e);
     }
     usort($members, function($a, $b){
         if($b->stars == $a->stars){
