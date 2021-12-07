@@ -1,3 +1,4 @@
 .vscode
 d**/input_test.txt
 .config
+/vendor/
