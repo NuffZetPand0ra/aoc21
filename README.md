@@ -18,7 +18,7 @@ Command to set up config file.
 
 ### Creating a new day
 
-To make boilerplate for a new day, you can use the cli tool "rudo. Ie. to make boilerplate for day 21, call in your command line.
+To make boilerplate for a new day, you can use the cli tool "rudolf". Ie. to make boilerplate for day 21, call in your command line.
 
 ```cli
 php rudolf dawn -d 21
